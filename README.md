@@ -22,35 +22,35 @@ To load multiple obfuscations together, e.g. for training use the [`sample_from_
 
 Clean|AdversarialPatches|BackgroundBlurComposition|
 -----|------------------|------------------------|
-![Clean](images/Clean.png)|![AdversarialPatches](images/AdversarialPatches.png)|![BackgroundBlurComposition](images/BackgroundBlurComposition.png)
+![Clean](example_images/Clean.png)|![AdversarialPatches](example_images/AdversarialPatches.png)|![BackgroundBlurComposition](example_images/BackgroundBlurComposition.png)
 
 ColorNoiseBlocks|ColorPatternOverlay|Halftoning|
 ----------------|-------------------|----------|
-![ColorNoiseBlocks](images/ColorNoiseBlocks.png)|![ColorPatternOverlay](images/ColorPatternOverlay.png)|![Halftoning](images/Halftoning.png)
+![ColorNoiseBlocks](example_images/ColorNoiseBlocks.png)|![ColorPatternOverlay](example_images/ColorPatternOverlay.png)|![Halftoning](example_images/Halftoning.png)
 
 HighContrastBorder|IconOverlay|ImageOverlay|
 ------------------|-----------|------------|
-![HighContrastBorder](images/HighContrastBorder.png)|![IconOverlay](images/IconOverlay.png)|![ImageOverlay](images/ImageOverlay.png)
+![HighContrastBorder](example_images/HighContrastBorder.png)|![IconOverlay](example_images/IconOverlay.png)|![ImageOverlay](example_images/ImageOverlay.png)
 
 Interleave|InvertLines|LineShift|
 ----------|-----------|---------|
-![Interleave](images/Interleave.png)|![InvertLines](images/InvertLines.png)|![LineShift](images/LineShift.png)
+![Interleave](example_images/Interleave.png)|![InvertLines](example_images/InvertLines.png)|![LineShift](example_images/LineShift.png)
 
 LowContrastTriangles|PerspectiveComposition|PerspectiveTransform|
 --------------------|----------------------|--------------------|
-![LowContrastTriangles](images/LowContrastTriangles.png)|![PerspectiveComposition](images/PerspectiveComposition.png)|![PerspectiveTransform](images/PerspectiveTransform.png)
+![LowContrastTriangles](example_images/LowContrastTriangles.png)|![PerspectiveComposition](example_images/PerspectiveComposition.png)|![PerspectiveTransform](example_images/PerspectiveTransform.png)
 
 PhotoComposition|RotateBlocks|RotateImage|
 ----------------|------------|-----------|
-![PhotoComposition](images/PhotoComposition.png)|![RotateBlocks](images/RotateBlocks.png)|![RotateImage](images/RotateImage.png)
+![PhotoComposition](example_images/PhotoComposition.png)|![RotateBlocks](example_images/RotateBlocks.png)|![RotateImage](example_images/RotateImage.png)
 
 StyleTransfer|SwirlWarp|TextOverlay|
 -------------|---------|-----------|
-![StyleTransfer](images/StyleTransfer.png)|![SwirlWarp](images/SwirlWarp.png)|![TextOverlay](images/TextOverlay.png)
+![StyleTransfer](example_images/StyleTransfer.png)|![SwirlWarp](example_images/SwirlWarp.png)|![TextOverlay](example_images/TextOverlay.png)
 
 Texturize|WavyColorWarp|
 ---------|-------------|
-![Texturize](images/Texturize.png)|![WavyColorWarp](images/WavyColorWarp.png)
+![Texturize](example_images/Texturize.png)|![WavyColorWarp](example_images/WavyColorWarp.png)
 
 ### Download {#dataset-download}
 

@@ -1,5 +1,3 @@
-#!/usr/bin/python
-#
 # Copyright 2023 DeepMind Technologies Limited
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -173,11 +171,11 @@ def load_predictions(
     for line in f:
       line = line.rstrip('\n')
       if line:
-        values = line.split(',')
-        image_ids.append(values[0])
-        labels.append(int(values[1]))
+        image_id, label, prediction = line.split(',')
+        image_ids.append(image_id)
+        labels.append(int(label))
         predictions.append(
-            np.fromstring(values[2].strip(' []'), dtype=dtype, sep=' '))
+            np.fromstring(prediction.strip(' []'), dtype=dtype, sep=' '))
   return np.array(image_ids), np.array(labels), np.array(predictions)
 
 

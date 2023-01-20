@@ -1,5 +1,3 @@
-#!/usr/bin/python
-#
 # Copyright 2023 DeepMind Technologies Limited
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -80,8 +78,8 @@ class Split(enum.Enum):
   VALID = 3
   TEST = 4
 
-  @classmethod
-  def from_string(cls, name: str) -> 'Split':
+  @staticmethod
+  def from_string(name: str) -> 'Split':
     return {
         'TRAIN': Split.TRAIN,
         'TRAIN_AND_VALID': Split.TRAIN_AND_VALID,
@@ -105,7 +103,7 @@ def _uint8_to_neg1_pos1_float(batch: _BATCH) -> _BATCH:
   return batch
 
 
-def _imagnet_channel_wise_norm(batch: _BATCH) -> _BATCH:
+def _imagenet_channel_wise_norm(batch: _BATCH) -> _BATCH:
   batch['image'] = (tf.cast(batch['image'], tf.float32) -
                     _IMAGENET_MEAN) / _IMAGENET_STD
   return batch
@@ -118,7 +116,7 @@ def _get_normalize_fn(
   elif normalization == Normalization.MINUS_PLUS_ONE:
     return _uint8_to_neg1_pos1_float
   elif normalization == Normalization.IMAGENET_CHANNEL_WISE_NORM:
-    return _imagnet_channel_wise_norm
+    return _imagenet_channel_wise_norm
   else:
     raise ValueError(f'Unknown normalization: `{normalization}`.')
 

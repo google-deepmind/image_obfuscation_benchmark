@@ -3,7 +3,7 @@
 [TOC]
 
 This repository contains the code to evaluate models on the image obfuscation benchmark, first presented in
-[Benchmarking Robustness to Adversarial Image Obfuscations](TODO Arxiv)
+[Benchmarking Robustness to Adversarial Image Obfuscations](https://arxiv.org/abs/2301.12993)
 (Stimberg et al., 2023).
 
 ## Dataset
@@ -56,33 +56,33 @@ Texturize|WavyColorWarp|
 
 ### Download {#dataset-download}
 
-You can download the validation and train splits for all the obfuscations below. If you want to load them with the Tensorflow datasets API as described above you also need to download these two JSON files: [dataset_info.json](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/dataset_info.json), [features.json](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/features.json).
+You can download the validation and train splits for all the obfuscations below. If you want to load them with the Tensorflow datasets API as described above you also need to download these two JSON files: [dataset_info.json](https://storage.googleapis.com/dm_image_obfuscation_benchmark/dataset_info.json), [features.json](https://storage.googleapis.com/dm_image_obfuscation_benchmark/features.json).
 
 | Obfuscation               | Validation  |       Train |
 | ------------------------- | ----------- | ----------- |
-| Clean                     | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_Clean.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_Clean.tar) (31 GB) |
-| AdversarialPatches        | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_AdversarialPatches.tar) (1.4 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_AdversarialPatches.tar) ( 36 GB) |
-| BackgroundBlurComposition | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_BackgroundBlurComposition.tar) ( 0.5 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_BackgroundBlurComposition.tar) (12 GB) |
-| ColorNoiseBlocks          | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_ColorNoiseBlocks.tar) (1.9 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_ColorNoiseBlocks.tar) (48 GB) |
-| ColorPatternOverlay       | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_ColorPatternOverlay.tar) (1.8 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_ColorPatternOverlay.tar) (45 GB) |
-| Halftoning                | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_Halftoning.tar) (2.4 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_Halftoning.tar) (54 GB) |
-| HighContrastBorder        | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_HighContrastBorder.tar) (2.1 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_HighContrastBorder.tar) (55 GB) |
-| IconOverlay               | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_IconOverlay.tar) (1.7 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_IconOverlay.tar) (43 GB) |
-| ImageOverlay              | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_ImageOverlay.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_ImageOverlay.tar) (30 GB) |
-| Interleave                | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_Interleave.tar) (1.5 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_Interleave.tar) (38 GB) |
-| InvertLines               | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_InvertLines.tar) (1.4 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_InvertLines.tar) (35 GB) |
-| LineShift                 | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_LineShift.tar) (1.5 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_LineShift.tar) (37 GB) |
-| LowContrastTriangles      | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_LowContrastTriangles.tar) (0.9 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_LowContrastTriangles.tar) (23 GB) |
-| PerspectiveComposition    | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_PerspectiveComposition.tar) (1.1 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_PerspectiveComposition.tar) (29 GB) |
-| PerspectiveTransform      | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_PerspectiveTransform.tar) (0.4 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_PerspectiveTransform.tar) (9.5 GB) |
-| PhotoComposition          | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_PhotoComposition.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_PhotoComposition.tar) (31 GB) |
-| RotateBlocks              | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_RotateBlocks.tar) (1.5 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_RotateBlocks.tar) (37 GB) |
-| RotateImage               | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_RotateImage.tar) (1.0 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_RotateImage.tar) (24 GB) |
-| StyleTransfer             | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_StyleTransfer.tar) (1.3 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_StyleTransfer.tar) (34 GB) |
-| SwirlWarp                 | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_SwirlWarp.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_SwirlWarp.tar) (29 GB) |
-| TextOverlay               | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_TextOverlay.tar) (2.1 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_TextOverlay.tar) (55 GB) |
-| Texturize                 | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_Texturize.tar) (1.3 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_Texturize.tar) (34 GB) |
-| WavyColorWarp             | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/validation_WavyColorWarp.tar) (1.3 GB) | [tar](https://storage.googleapis.com/dm-adversarial-robustness/obfuscated_imagenet/1.0.0/train_WavyColorWarp.tar) (33 GB) |
+| Clean                     | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_Clean.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_Clean.tar) (31 GB) |
+| AdversarialPatches        | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_AdversarialPatches.tar) (1.4 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_AdversarialPatches.tar) ( 36 GB) |
+| BackgroundBlurComposition | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_BackgroundBlurComposition.tar) ( 0.5 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_BackgroundBlurComposition.tar) (12 GB) |
+| ColorNoiseBlocks          | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_ColorNoiseBlocks.tar) (1.9 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_ColorNoiseBlocks.tar) (48 GB) |
+| ColorPatternOverlay       | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_ColorPatternOverlay.tar) (1.8 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_ColorPatternOverlay.tar) (45 GB) |
+| Halftoning                | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_Halftoning.tar) (2.4 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_Halftoning.tar) (54 GB) |
+| HighContrastBorder        | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_HighContrastBorder.tar) (2.1 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_HighContrastBorder.tar) (55 GB) |
+| IconOverlay               | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_IconOverlay.tar) (1.7 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_IconOverlay.tar) (43 GB) |
+| ImageOverlay              | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_ImageOverlay.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_ImageOverlay.tar) (30 GB) |
+| Interleave                | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_Interleave.tar) (1.5 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_Interleave.tar) (38 GB) |
+| InvertLines               | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_InvertLines.tar) (1.4 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_InvertLines.tar) (35 GB) |
+| LineShift                 | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_LineShift.tar) (1.5 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_LineShift.tar) (37 GB) |
+| LowContrastTriangles      | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_LowContrastTriangles.tar) (0.9 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_LowContrastTriangles.tar) (23 GB) |
+| PerspectiveComposition    | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_PerspectiveComposition.tar) (1.1 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_PerspectiveComposition.tar) (29 GB) |
+| PerspectiveTransform      | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_PerspectiveTransform.tar) (0.4 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_PerspectiveTransform.tar) (9.5 GB) |
+| PhotoComposition          | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_PhotoComposition.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_PhotoComposition.tar) (31 GB) |
+| RotateBlocks              | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_RotateBlocks.tar) (1.5 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_RotateBlocks.tar) (37 GB) |
+| RotateImage               | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_RotateImage.tar) (1.0 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_RotateImage.tar) (24 GB) |
+| StyleTransfer             | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_StyleTransfer.tar) (1.3 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_StyleTransfer.tar) (34 GB) |
+| SwirlWarp                 | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_SwirlWarp.tar) (1.2 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_SwirlWarp.tar) (29 GB) |
+| TextOverlay               | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_TextOverlay.tar) (2.1 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_TextOverlay.tar) (55 GB) |
+| Texturize                 | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_Texturize.tar) (1.3 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_Texturize.tar) (34 GB) |
+| WavyColorWarp             | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/validation_WavyColorWarp.tar) (1.3 GB) | [tar](https://storage.googleapis.com/dm_image_obfuscation_benchmark/train_WavyColorWarp.tar) (33 GB) |
 
 
 ## Usage Instructions
@@ -145,15 +145,15 @@ dataset and code to evaluate on it.
 
 ## Citing this work
 
-If you use this code (or any derived code) in your work, please cite the accompanying paper:
+If you use this code (or any derived code) in your work, please cite the [accompanying paper](https://arxiv.org/abs/2301.12993):
 
 ```
-@article{stimberg2023benchmarking,
-  author={},
-  title={Benchmarking Robustness to Adversarial Image Obfuscations},
-  year={2023},
-  url={TODO},
-  eprinttype={arXiv}
+@misc{stimberg2023benchmarking,
+      title={Benchmarking Robustness to Adversarial Image Obfuscations}, 
+      author={Florian Stimberg and Ayan Chakrabarti and Chun-Ta Lu and Hussein Hazimeh and Otilia Stretcu and Wei Qiao and Yintao Liu and Merve Kaya and Cyrus Rashtchian and Ariel Fuxman and Mehmet Tek and Sven Gowal},
+      year={2023},
+      eprint={2301.12993},
+      archivePrefix={arXiv},
 }
 ```
 

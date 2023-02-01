@@ -1,7 +1,5 @@
 # Image Obfuscation Benchmark
 
-[TOC]
-
 This repository contains the code to evaluate models on the image obfuscation benchmark, first presented in
 [Benchmarking Robustness to Adversarial Image Obfuscations](https://arxiv.org/abs/2301.12993)
 (Stimberg et al., 2023).
@@ -109,7 +107,7 @@ sh image_obfuscation_benchmark/run.sh
 ### Evaluating a model
 
 ```
-source /tmp/distribution_shift_framework/bin/activate
+source /tmp/image_obfuscation_benchmark/image_obfuscation_benchmark/bin/activate
 ```
 
 and then run
@@ -149,7 +147,7 @@ If you use this code (or any derived code) in your work, please cite the [accomp
 
 ```
 @misc{stimberg2023benchmarking,
-      title={Benchmarking Robustness to Adversarial Image Obfuscations}, 
+      title={Benchmarking Robustness to Adversarial Image Obfuscations},
       author={Florian Stimberg and Ayan Chakrabarti and Chun-Ta Lu and Hussein Hazimeh and Otilia Stretcu and Wei Qiao and Yintao Liu and Merve Kaya and Cyrus Rashtchian and Ariel Fuxman and Mehmet Tek and Sven Gowal},
       year={2023},
       eprint={2301.12993},

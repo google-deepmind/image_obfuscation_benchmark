@@ -6,7 +6,7 @@ This repository contains the code to evaluate models on the image obfuscation be
 
 ## Dataset
 
-The dataset consists of 22 obfuscations and the Clean data. 19 obfuscations are training obfuscations and 3 are hold-out obfuscations. All images are central cropped to 224 x 224 and saved as compressed JPEG images. Each obfuscation is applied to each image in the [ILSVRC2012](https://www.image-net.org/challenges/LSVRC/2012/) dataset. For each image, the original_id, label and obfuscation hyper-parameters are stored with it. The dataset can be loaded through the [TensorFlow datasets](https://www.tensorflow.org/datasets) API. Each combination of `train` / `validation` and an obfuscation is its own split, e.g. to load the validation split obfuscated with the `StyleTransfer` obfuscation do
+The dataset consists of 22 obfuscations and the Clean data. 19 obfuscations are training obfuscations and 3 are hold-out obfuscations. All images are central cropped to 224 x 224 and saved as compressed JPEG images. Each obfuscation is applied to each image in the [ILSVRC2012](https://www.image-net.org/challenges/LSVRC/2012/) dataset. For each image, the file_name, label and obfuscation hyper-parameters are stored with it. The dataset can be loaded through the [TensorFlow datasets](https://www.tensorflow.org/datasets) API. Each combination of `train` / `validation` and an obfuscation is its own split, e.g. to load the validation split obfuscated with the `StyleTransfer` obfuscation do
 
 ```python
 import tensorflow_datasets as tfds

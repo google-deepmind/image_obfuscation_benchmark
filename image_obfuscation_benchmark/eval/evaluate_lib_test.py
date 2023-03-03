@@ -40,10 +40,8 @@ class EvaluateLibTest(parameterized.TestCase):
                                3: [1, 2, 8, 152, 404],
                                4: [1, 2, 15, 385, 294]}
     self._dataset = tf.data.Dataset.from_tensor_slices(
-        {'original_id': self._image_ids,
-         'label': self._labels,
-         'image': images
-        }).batch(1)
+        {'file_name': self._image_ids, 'label': self._labels, 'image': images}
+    ).batch(1)
 
     def _logit_function(tensor):
       logits = np.zeros((1, 1000))

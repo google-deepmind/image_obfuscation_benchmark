@@ -132,7 +132,7 @@ def predict(dataset: tf.data.Dataset,
   labels = []
   predictions = []
   for batch in tqdm.tqdm(dataset, desc='Making predictions'):
-    image_ids.extend(batch['original_id'].numpy().tolist())
+    image_ids.extend(batch['file_name'].numpy().tolist())
     labels.extend(list(batch['label']))
     predictions.extend(
         list(_get_predictions(batch['image'],

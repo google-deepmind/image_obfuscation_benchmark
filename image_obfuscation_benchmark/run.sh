@@ -17,7 +17,7 @@ set -euf -o pipefail  # Stop at failure.
 
 python3 -m venv image_obfuscation_benchmark
 source image_obfuscation_benchmark/bin/activate
-pip install -U pip
-pip install -e image_obfuscation_benchmark
+
+pip install --require-hashes -r image_obfuscation_benchmark/requirements.txt
 
 python3 -m image_obfuscation_benchmark.eval.evaluate_lib_test

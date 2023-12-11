@@ -1,0 +1,9 @@
+absl-py
+numpy
+scipy
+tensorflow
+tensorflow-datasets
+tensorflow-hub
+tqdm
+mock
+

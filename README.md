@@ -92,7 +92,7 @@ Download the [eval dataset](#dataset-download) and extract it to a folder.
 Clone this repository.
 
 ```
-git clone https://github.com/deepmind/image_obfuscation_benchmark.git
+git clone https://github.com/google-deepmind/image_obfuscation_benchmark.git
 ```
 
 Execute `run.sh` to create and activate a virtualenv, install all necessary

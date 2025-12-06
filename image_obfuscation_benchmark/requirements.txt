@@ -174,7 +174,6 @@ etils[array-types,enp,epath,epy,etqdm,etree]==1.5.2 \
     --hash=sha256:ba6a3e1aff95c769130776aa176c11540637f5dd881f3b79172a5149b6b1c446
     # via
     #   array-record
-    #   etils
     #   tensorflow-datasets
 flatbuffers==23.5.26 \
     --hash=sha256:9ea1144cac05ce5d86e2859f431c6cd5e66cd9c78c558317c7955fb8d4c78d89 \
@@ -648,9 +647,9 @@ typing-extensions==4.9.0 \
     # via
     #   etils
     #   tensorflow
-urllib3==2.1.0 \
-    --hash=sha256:55901e917a5896a349ff771be919f8bd99aff50b79fe58fec595eb37bbc56bb3 \
-    --hash=sha256:df7aa8afb0148fa78488e7899b2c59b5f4ffcfa82e6c54ccb9dd37c1d7b52d54
+urllib3==2.6.0 \
+    --hash=sha256:c90f7a39f716c572c4e3e58509581ebd83f9b59cced005b7db7ad2d22b0db99f \
+    --hash=sha256:cb9bcef5a4b345d5da5d145dc3e30834f58e8018828cbc724d30b4cb7d4d49f1
     # via requests
 werkzeug==3.0.1 \
     --hash=sha256:507e811ecea72b18a404947aded4b3390e1db8f826b494d76550ef45bb3b1dcc \
@@ -744,5 +743,6 @@ zipp==3.17.0 \
     # via etils
 
 # WARNING: The following packages were not pinned, but pip requires them to be
-# pinned when the requirements file includes hashes. Consider using the --allow-unsafe flag.
+# pinned when the requirements file includes hashes and the requirement is not
+# satisfied by a package already installed. Consider using the --allow-unsafe flag.
 # setuptools
